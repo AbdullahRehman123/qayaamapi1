@@ -7,6 +7,7 @@ class Account(models.Model):
     phone = models.CharField(max_length=11)
     address = models.CharField(max_length=200)
     city = models.CharField(max_length=100)
+    password = models.charField(max_length=100)
     type_choices = (
         ('Tenant', 'Tenant'),
         ('Realtor', 'Realtor'),
